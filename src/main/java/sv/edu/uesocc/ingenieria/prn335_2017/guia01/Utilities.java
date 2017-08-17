@@ -20,11 +20,25 @@ public String getResume (String texto){
 }    
     
  public String Capitalizar (String texto){
-     return "";
+    String espacio = null, numero;
+     
+    texto.toCharArray();
+    if(texto.contains(espacio)){
+     texto.matches(texto.replaceAll(texto, espacio).toUpperCase());
+        
+    }
+    return "";
  }   
     
   public int ContarCoincidencias(String frase, String texto){
-     return 0; 
+     int coincidencia=0;
+     frase.getBytes();
+     if(frase.equals(texto)){
+         coincidencia++;
+     }else{
+         coincidencia=0;
+     }
+     return coincidencia; 
   }  
     
 }
