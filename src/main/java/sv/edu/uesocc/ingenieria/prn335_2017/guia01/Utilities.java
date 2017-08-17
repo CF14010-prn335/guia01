@@ -2,7 +2,11 @@
 package sv.edu.uesocc.ingenieria.prn335_2017.guia01;
 
 public class Utilities {
- 
+ /**
+  * 
+  * @param texto
+  * @return Metodo que devuelve los primeros 30 caracteres del texto
+  */
 public String getResume (String texto){
     String caracter ="";
     int incremento =0;
@@ -18,7 +22,11 @@ public String getResume (String texto){
     }while(existencia==false);
     return caracter;
 }    
-    
+  /**
+   * 
+   * @param texto
+   * @return Capitaliza cada palabra del texto 
+   */ 
  public String Capitalizar (String texto){
     String espacio = null, numero;
      
@@ -29,7 +37,12 @@ public String getResume (String texto){
     }
     return "";
  }   
-    
+    /**
+     * 
+     * @param frase
+     * @param texto
+     * @return Compara frases con el texto para observar si tienen coincidencias
+     */
   public int ContarCoincidencias(String frase, String texto){
      int coincidencia=0;
      frase.getBytes();
